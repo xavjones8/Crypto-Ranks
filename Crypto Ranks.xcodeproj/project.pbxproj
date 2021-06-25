@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		D24043A826868DB1007B4B33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24043A726868DB1007B4B33 /* AppDelegate.swift */; };
 		D24043AA26868DB1007B4B33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24043A926868DB1007B4B33 /* SceneDelegate.swift */; };
-		D24043AC26868DB1007B4B33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24043AB26868DB1007B4B33 /* ViewController.swift */; };
 		D24043AF26868DB1007B4B33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24043AD26868DB1007B4B33 /* Main.storyboard */; };
 		D24043B126868DB2007B4B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24043B026868DB2007B4B33 /* Assets.xcassets */; };
 		D24043B426868DB2007B4B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24043B226868DB2007B4B33 /* LaunchScreen.storyboard */; };
+		D24043BC26868E75007B4B33 /* Cryptocurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24043BB26868E75007B4B33 /* Cryptocurrency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D24043A426868DB1007B4B33 /* Crypto Ranks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Ranks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24043A726868DB1007B4B33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D24043A926868DB1007B4B33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D24043AB26868DB1007B4B33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D24043AE26868DB1007B4B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D24043B026868DB2007B4B33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D24043B326868DB2007B4B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D24043B526868DB2007B4B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24043BB26868E75007B4B33 /* Cryptocurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +58,11 @@
 			children = (
 				D24043A726868DB1007B4B33 /* AppDelegate.swift */,
 				D24043A926868DB1007B4B33 /* SceneDelegate.swift */,
-				D24043AB26868DB1007B4B33 /* ViewController.swift */,
 				D24043AD26868DB1007B4B33 /* Main.storyboard */,
 				D24043B026868DB2007B4B33 /* Assets.xcassets */,
 				D24043B226868DB2007B4B33 /* LaunchScreen.storyboard */,
 				D24043B526868DB2007B4B33 /* Info.plist */,
+				D24043BB26868E75007B4B33 /* Cryptocurrency.swift */,
 			);
 			path = "Crypto Ranks";
 			sourceTree = "<group>";
@@ -137,8 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24043AC26868DB1007B4B33 /* ViewController.swift in Sources */,
 				D24043A826868DB1007B4B33 /* AppDelegate.swift in Sources */,
+				D24043BC26868E75007B4B33 /* Cryptocurrency.swift in Sources */,
 				D24043AA26868DB1007B4B33 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
