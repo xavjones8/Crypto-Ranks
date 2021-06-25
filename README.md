@@ -10,17 +10,27 @@
 ## Models
 
 struct Currency: CustomStringConvertible, Comparable{
+
 var name: String
+
 var symbol: String
+
 var price: Double
+
 var rank: Int
+
 var change: Double
+
 var description: String{
+
 return “(name) has had a percent change of (change) in the last 7 days and is currently sitting at $(price) per share. It’s rank among cryptocurrencies is \(rank).”
+
 }
 
 static func < (lhs: Currency, rhs: Currency) → Bool {
+
 return lhs.rank < rhs.rank
+
 }
 
 }
