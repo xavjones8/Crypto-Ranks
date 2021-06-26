@@ -41,7 +41,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wfz-i0-dl1">
-                                <rect key="frame" x="0.0" y="190.5" width="414" height="671.5"/>
+                                <rect key="frame" x="0.0" y="200.5" width="414" height="661.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vS8-KF-WqS">
                                     <size key="itemSize" width="412" height="128"/>
@@ -102,33 +102,39 @@
                                     <outlet property="delegate" destination="UKL-91-F9a" id="Z6t-iI-W8B"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="IkL-gW-sfa">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dso-Ef-A1z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Wfz-i0-dl1" firstAttribute="top" secondItem="yQc-ce-Plh" secondAttribute="bottom" constant="10" id="6fU-pr-DzA"/>
+                            <constraint firstItem="IkL-gW-sfa" firstAttribute="centerY" secondItem="Miw-5m-RGB" secondAttribute="centerY" id="DbC-PG-Khl"/>
+                            <constraint firstItem="Wfz-i0-dl1" firstAttribute="bottom" secondItem="Dso-Ef-A1z" secondAttribute="bottom" id="Fov-rH-hLr"/>
+                            <constraint firstItem="Wfz-i0-dl1" firstAttribute="trailing" secondItem="Dso-Ef-A1z" secondAttribute="trailing" id="Nuy-aC-iqO"/>
                             <constraint firstItem="yQc-ce-Plh" firstAttribute="leading" secondItem="Dso-Ef-A1z" secondAttribute="leading" constant="20" id="ZWq-fS-mUF"/>
-                            <constraint firstItem="Wfz-i0-dl1" firstAttribute="bottom" secondItem="Dso-Ef-A1z" secondAttribute="bottom" id="a2T-AR-b1X"/>
-                            <constraint firstItem="Wfz-i0-dl1" firstAttribute="trailing" secondItem="Dso-Ef-A1z" secondAttribute="trailing" id="aA7-oe-Fky"/>
+                            <constraint firstItem="Wfz-i0-dl1" firstAttribute="top" secondItem="yQc-ce-Plh" secondAttribute="bottom" constant="20" id="bsg-VS-zBE"/>
                             <constraint firstItem="Dso-Ef-A1z" firstAttribute="trailing" secondItem="yQc-ce-Plh" secondAttribute="trailing" constant="20" id="dTg-7j-VPF"/>
                             <constraint firstItem="yQc-ce-Plh" firstAttribute="top" secondItem="Dso-Ef-A1z" secondAttribute="top" constant="20" id="kZe-Px-Dl6"/>
-                            <constraint firstItem="Wfz-i0-dl1" firstAttribute="leading" secondItem="Dso-Ef-A1z" secondAttribute="leading" id="uIj-VV-jxN"/>
+                            <constraint firstItem="IkL-gW-sfa" firstAttribute="centerX" secondItem="Miw-5m-RGB" secondAttribute="centerX" id="rGY-Aq-xmU"/>
+                            <constraint firstItem="Wfz-i0-dl1" firstAttribute="leading" secondItem="Dso-Ef-A1z" secondAttribute="leading" id="rLF-Ik-t71"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cryptocurrencies" id="Zqs-aT-2Ia"/>
                     <connections>
                         <outlet property="cryptoCollection" destination="Wfz-i0-dl1" id="Sqb-2H-VrG"/>
+                        <outlet property="loadingIndicator" destination="IkL-gW-sfa" id="Ho3-8L-JBU"/>
                         <segue destination="ghw-PI-Aya" kind="show" identifier="cryptoDetailsSegue" id="T4O-hb-2Cg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kd6-sT-3dU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2307" y="193"/>
+            <point key="canvasLocation" x="2306" y="206"/>
         </scene>
-        <!--View Controller-->
+        <!--Crypto Details View Controller-->
         <scene sceneID="HeS-rH-6nW">
             <objects>
-                <viewController id="ghw-PI-Aya" sceneMemberID="viewController">
+                <viewController id="ghw-PI-Aya" customClass="CryptoDetailsViewController" customModule="Crypto_Ranks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SdE-Q5-qBf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +201,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZY-CM-sb2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZY-CM-sb2">
                                 <rect key="frame" x="40" y="185" width="334" height="17"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
@@ -225,10 +231,18 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="AQQ-ud-LX0"/>
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="changeLabel" destination="QGD-j8-PSl" id="TrE-74-ORg"/>
+                        <outlet property="descLabel" destination="PZY-CM-sb2" id="7YG-uG-reI"/>
+                        <outlet property="nameLabel" destination="W0U-zy-lvd" id="Y03-Yc-Ib7"/>
+                        <outlet property="priceLabel" destination="ya1-1a-o5T" id="9L5-9f-voZ"/>
+                        <outlet property="rankLabel" destination="MnE-YC-hhh" id="hwd-vF-BOm"/>
+                        <outlet property="symbolLabel" destination="Acj-kL-s6S" id="LBG-ia-pG7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMa-ac-7Nu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3118.840579710145" y="146.65178571428569"/>
+            <point key="canvasLocation" x="3112" y="206"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wOZ-hS-ZM2">

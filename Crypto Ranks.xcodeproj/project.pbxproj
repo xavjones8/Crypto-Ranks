@@ -15,6 +15,7 @@
 		D24043BC26868E75007B4B33 /* Cryptocurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24043BB26868E75007B4B33 /* Cryptocurrency.swift */; };
 		D2837E0D2686AE2F0017BF4A /* CryptoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2837E0C2686AE2F0017BF4A /* CryptoCollectionViewCell.swift */; };
 		D2837E132686B51A0017BF4A /* CryptoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2837E122686B51A0017BF4A /* CryptoCollectionViewController.swift */; };
+		D2837E372687DE0E0017BF4A /* CryptoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2837E362687DE0E0017BF4A /* CryptoDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D24043BB26868E75007B4B33 /* Cryptocurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrency.swift; sourceTree = "<group>"; };
 		D2837E0C2686AE2F0017BF4A /* CryptoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2837E122686B51A0017BF4A /* CryptoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCollectionViewController.swift; sourceTree = "<group>"; };
+		D2837E362687DE0E0017BF4A /* CryptoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D24043BB26868E75007B4B33 /* Cryptocurrency.swift */,
 				D2837E0C2686AE2F0017BF4A /* CryptoCollectionViewCell.swift */,
 				D2837E122686B51A0017BF4A /* CryptoCollectionViewController.swift */,
+				D2837E362687DE0E0017BF4A /* CryptoDetailsViewController.swift */,
 			);
 			path = "Crypto Ranks";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2837E372687DE0E0017BF4A /* CryptoDetailsViewController.swift in Sources */,
 				D24043A826868DB1007B4B33 /* AppDelegate.swift in Sources */,
 				D24043BC26868E75007B4B33 /* Cryptocurrency.swift in Sources */,
 				D2837E132686B51A0017BF4A /* CryptoCollectionViewController.swift in Sources */,
