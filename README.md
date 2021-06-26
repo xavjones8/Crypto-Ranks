@@ -6,6 +6,7 @@
 - Create more complex and modular interfaces
 - Strengthen knowledge of the Swift language
 - Exercise good programming etiquette.
+# Pre-Development Plan
 
 ## Models
 
@@ -48,4 +49,7 @@ return lhs.rank < rhs.rank
 Collection View Controller - Handles collection view logic and appearance. Handles touch input and sends current currency id to the detail view.
 
 Details View Controller - Receives information from the collection view and displays the currency details.
+
+# Post-Development Lessons
+This project filled in so many blanks for me when it comes to implementing APIs and using collection views. I plan on continuing to expand my knowledge of API implementations and asynchronous threads in my next project.
 
