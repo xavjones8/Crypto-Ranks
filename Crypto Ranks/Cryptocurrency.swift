@@ -42,6 +42,7 @@ struct Cryptocurrency: CustomStringConvertible, Comparable, Codable{
     
     
 }
+
 struct CurrenciesResults: Codable{
     var data: [Cryptocurrency]
 }
