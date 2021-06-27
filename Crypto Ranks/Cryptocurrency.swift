@@ -24,7 +24,7 @@ struct Cryptocurrency: CustomStringConvertible, Comparable, Codable{
     }
     //Conforms to CustomStringConvertible
     var description: String{
-        return "\(name) has had a percent change of \(change)% in the last 7 days and is currently sitting at $\(price) per share. It’s rank among cryptocurrencies is #\(rank)."
+        return "\(name) has had a percent change of \(change)% in the last 7 days and is currently sitting at $\(price) per share. Its rank among cryptocurrencies is #\(rank)."
     }
     //Conforms to Comparable
     static func < (lhs: Cryptocurrency, rhs: Cryptocurrency) -> Bool {
